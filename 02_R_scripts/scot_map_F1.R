@@ -205,7 +205,13 @@ plot_tennents
 # save plot
 ggsave('./03_plots/scotmap_tennents.png', dpi = 320, height = 12, width = 9, units = 'cm')
 
-# 3.4* Land O'Norris ----
+# 3.4* Patch plots----
+
+plot_bru + plot_tunnocks + plot_tennents
+
+ggsave('./03_plots/scotmap_bru_tunnocks_tennents.png', dpi = 320, height = 12, width = 27, units = 'cm')
+
+# 3.5* Land O'Norris ----
 
 # define some plot annotations
 annotation1_lando <- data.frame(
@@ -249,7 +255,7 @@ plot_lando
 # save plot
 ggsave('./03_plots/scotmap_lando.png', dpi = 320, height = 12, width = 9, units = 'cm')
 
-# 3.5* Glenfiddich----
+# 3.6* Glenfiddich----
 # work in progress, possibly not used
 # plan to make map in Glenfiddich style and strpes across Scotland in whisky colours
 # learn from Ryand Hart curatedmess code - see section 4
